@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Stein's Pokédex</title>
+</head>
+
+<body>
+    <div id="modal">
+        <div id="modalContent">
+            <h1 id="pokemonName"></h1>
+            <h2 id="pokemonID"></h2>
+            <h2>Sprites: </h2>
+            <div id="pokemonImages">
+                <figure>
+                    <img id="pokemonImage" src="" alt="">
+                    <figcaption>Regular</figcaption>
+                </figure>
+                <figure>
+                    <img id="pokemonImageShiny" src="" alt="">
+                    <figcaption>Shiny</figcaption>
+                </figure>
+            </div>
+            <h2>Evolution:</h2>
+            <div id="evolutionList">
+                
+            </div>
+            <h2>Types: </h2>
+            <ul id="typesModal"></ul>
+            <h2>Stats:</h2>
+            <ul id="pokemonStats">
+                <li class="stat">Health-Points: </li>
+                <li class="stat">Attack: </li>
+                <li class="stat">Defence: </li>
+                <li class="stat">Special-Attack: </li>
+                <li class="stat">Special-Defence: </li>
+                <li class="stat">Speed: </li>
+            </ul>
+            <h2 id="pokemonHeight">Height:</h2>
+            <h2 id="pokemonWeight">Weight:</h2>
+        </div>
+    </div>
+    <aside>
+        <nav>
+            <h1 id="navHeader">Stein's Pokedéx!</h1>
+            <ul id="navItems">
+                <li class="navItem">
+                    <a href="#gen1Header">Generation I</a>
+                </li>
+                <li class="navItem">
+                    <a href="#gen2Header">Generation II</a>
+                </li>
+                <li class="navItem">
+                    <a href="#gen3Header">Generation III</a>
+                </li>
+                <li class="navItem">
+                    <a href="#gen4Header">Generation IV</a>
+                </li>
+                <li id="lastItem" class="navItem">
+                    <a href="#gen5Header">Generation V</a>
+                </li>
+            </ul>
+            <h1>Filters:</h1>
+            <ul id="filters">
+                <li id="normal" class="filter">
+                    Normal
+                </li>
+                <li id="fire" class="filter">
+                    Fire
+                </li>
+                <li id="water" class="filter">
+                    Water
+                </li>
+                <li id="grass" class="filter">
+                    Grass
+                </li>
+                <li id="flying" class="filter">
+                    Flying
+                </li>
+                <li id="fighting" class="filter">
+                    Fighting
+                </li>
+                <li id="poison" class="filter">
+                    Poison
+                </li>
+                <li id="electric" class="filter">
+                    Electric
+                </li>
+                <li id="ground" class="filter">
+                    Ground
+                </li>
+                <li id="rock" class="filter">
+                    Rock
+                </li>
+                <li id="psychic" class="filter">
+                    Psychic
+                </li>
+                <li id="ice" class="filter">
+                    Ice
+                </li>
+                <li id="bug" class="filter">
+                    Bug
+                </li>
+                <li id="ghost" class="filter">
+                    Ghost
+                </li>
+                <li id="steel" class="filter">
+                    Steel
+                </li>
+                <li id="dragon" class="filter">
+                    Dragon
+                </li>
+                <li id="dark" class="filter">
+                    Dark
+                </li>
+                <li id="fairy" class="filter">
+                    Fairy
+                </li>
+            </ul>
+        </nav>
+        <p id="asideText">A Pokédex made with HTML, CSS and JavaScript using the PokéApi.</p>
+    </aside>
+    <main>
+        <section>
+            <h2 id="gen1Header">Generation I - Kanto region</h2>
+            <ol class="pokemonList" id="gen1">
+            </ol>
+            <p id="darkText">The Dark type was introduced in Generation II.</p>
+            <h2 id="gen2Header">Generation II - Johto region</h2>
+            <ol class="pokemonList" id="gen2">
+            </ol>
+            <h2 id="gen3Header">Generation III - Hoenn region</h2>
+            <ol class="pokemonList" id="gen3">
+            </ol>
+            <h2 id="gen4Header">Generation IV - Sinnoh region</h2>
+            <ol class="pokemonList" id="gen4">
+            </ol>
+            <h2 id="gen5Header">Generation V - Unova region</h2>
+            <ol class="pokemonList" id="gen5">
+            </ol>
+        </section>
+    </main>
+    <script src="scripts/colors.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/filter.js"></script>
+    <script src="scripts/select.js"></script>
+    <script src="scripts/evolution.js"></script>
+</body>
+</html>
